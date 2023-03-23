@@ -7,3 +7,4 @@ Whenever changes are pushed to the main branch, Travis CI runs the build and tes
 
 This allows for rapid and reliable deployment of changes to the application.
 
+![image](https://user-images.githubusercontent.com/117165801/227231485-785f781f-481b-47cb-b2cf-0d4177969da6.png)
