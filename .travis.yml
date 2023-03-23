@@ -8,3 +8,16 @@ services:
 
 script:
   - docker run yanir/docker-react npm run test --  --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  region: "eu-east-1"
+  app: "docker-react"
+  env: "Docker-env"
+  bucket_name: "elasticbeanstalk-eu-east-1-306476626547"
+  bucket_path: "docker-path"
+  on:
+    branch: main
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"  
