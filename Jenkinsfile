@@ -1,5 +1,7 @@
 pipeline {
-  agent any
+  agent {
+    label 'ec2-v1'
+  }
   stages {
     stage('Build Docker image') {
       steps {
