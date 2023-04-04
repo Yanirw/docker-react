@@ -1,9 +1,9 @@
 pipeline {
   agent {
-    node {
-      label ''
-      name 'ec2-v1'
-    }
+    label 'ec2-v1'
+        node {
+            label 'ec2-v1'
+        }
   }
   stages {
     stage('Build Docker image') {
