@@ -14,7 +14,7 @@ The CI/CD process ensures that any changes made to the code are automatically bu
 
 ![image](https://user-images.githubusercontent.com/117165801/227231485-785f781f-481b-47cb-b2cf-0d4177969da6.png)
 
-Steps:
+#### Steps:
 
 1. Whenever a developer issues a new Pull request in GitHub, Travis CI will run tests over the codebase and report back if all the checks have passed.
 2. As soon as a developer merges the new changes of the application to the main branch, Travis CI will automatically run tests again, then build the Docker image for the React app, and finally deploy the app in containers over to AWS Elastic Beanstalk.
